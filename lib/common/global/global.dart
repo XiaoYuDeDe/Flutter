@@ -13,9 +13,8 @@ class Global{
     WidgetsFlutterBinding.ensureInitialized();
 
     // check os and init Firebase
-    await Firebase.initializeApp();
     if (Platform.isAndroid) {
-      await Firebase.initializeApp(
+      Firebase.initializeApp(
         options: const FirebaseOptions(
           apiKey: "AIzaSyCiZj_tAkh50SrHgPM9MGPBoRKgCRYu5J0",
           appId: "1:37017623380:android:df994ce800d96e790e06c1",
@@ -24,7 +23,7 @@ class Global{
         ),
       );
     } else {
-      await Firebase.initializeApp();
+      Firebase.initializeApp();
     }
     storageService = await StorageService().init();
   }
