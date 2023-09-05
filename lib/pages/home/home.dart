@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                             mainAxisSpacing: 15,
                             crossAxisSpacing: 15,
                             childAspectRatio: 1.5,
-                            mainAxisExtent: 200),
+                            mainAxisExtent: 220),
                     delegate: SliverChildBuilderDelegate(
                       childCount: state.attractionsList.length,
                       (BuildContext context, int index) {

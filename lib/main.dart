@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:travelguide/common/routes/pages.dart';
 import 'package:travelguide/common/themes/colors.dart';
 import 'common/global/global.dart';
-import 'common/service/storage_service.dart';
+import 'firebase_options.dart';
 
 Future<void> main() async {
   await Global.init();
